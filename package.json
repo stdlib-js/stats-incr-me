@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-incr-me",
-  "version": "0.0.1-alpha.4",
+  "version": "0.0.1",
   "description": "Compute the mean error (ME) incrementally.",
   "license": "Apache-2.0",
   "author": {
