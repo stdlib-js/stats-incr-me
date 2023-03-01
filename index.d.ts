@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,16 +16,29 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
 /**
-* Compute the mean error incrementally.
+* If provided input values, the accumulator function returns an updated mean error. If not provided input values, the accumulator function returns the current mean error.
 *
-* @module @stdlib/stats-incr-me
+* ## Notes
+*
+* -   If provided `NaN` or a value which, when used in computations, results in `NaN`, the accumulated value is `NaN` for all future invocations.
+*
+* @param x - input value
+* @param y - input value
+* @returns mean error or null
+*/
+type accumulator = ( x?: number, y?: number ) => number | null;
+
+/**
+* Returns an accumulator function which incrementally computes the mean error.
+*
+* @returns accumulator function
 *
 * @example
-* var incrme = require( '@stdlib/stats-incr-me' );
-*
 * var accumulator = incrme();
 *
 * var m = accumulator();
@@ -40,12 +53,9 @@
 * m = accumulator();
 * // returns 4.0
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function incrme(): accumulator;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = incrme;
