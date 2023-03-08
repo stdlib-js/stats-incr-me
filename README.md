@@ -30,10 +30,14 @@ The [mean error][mean-absolute-error] is defined as
 
 <!-- <equation class="equation" label="eq:mean_error" align="center" raw="\operatorname{ME} = \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)" alt="Equation for the mean error."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{ME} = \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)" data-equation="eq:mean_error">
+```math
+\operatorname{ME} = \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{ME} = \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)" data-equation="eq:mean_error">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7d6e6319f451be0997d35a6cf491b08e1f2cb5cf/lib/node_modules/@stdlib/stats/incr/me/docs/img/equation_mean_error.svg" alt="Equation for the mean error.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -41,14 +45,30 @@ The [mean error][mean-absolute-error] is defined as
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-incr-me
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import incrme from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-me@deno/mod.js';
+var incrme = require( '@stdlib/stats-incr-me' );
 ```
 
 #### incrme()
@@ -102,8 +122,8 @@ m = accumulator();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import incrme from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-me@deno/mod.js';
+var randu = require( '@stdlib/random-base-randu' );
+var incrme = require( '@stdlib/stats-incr-me' );
 
 var accumulator;
 var v1;
@@ -151,7 +171,7 @@ console.log( accumulator() );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -195,7 +215,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -215,11 +235,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/mae]: https://github.com/stdlib-js/stats-incr-mae/tree/deno
+[@stdlib/stats/incr/mae]: https://github.com/stdlib-js/stats-incr-mae
 
-[@stdlib/stats/incr/mean]: https://github.com/stdlib-js/stats-incr-mean/tree/deno
+[@stdlib/stats/incr/mean]: https://github.com/stdlib-js/stats-incr-mean
 
-[@stdlib/stats/incr/mme]: https://github.com/stdlib-js/stats-incr-mme/tree/deno
+[@stdlib/stats/incr/mme]: https://github.com/stdlib-js/stats-incr-mme
 
 <!-- </related-links> -->
 
