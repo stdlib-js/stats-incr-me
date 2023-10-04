@@ -63,7 +63,7 @@ The [mean error][mean-absolute-error] is defined as
 ## Usage
 
 ```javascript
-import incrme from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-me@deno/mod.js';
+import incrme from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-me@v0.1.1-deno/mod.js';
 ```
 
 #### incrme()
@@ -118,7 +118,7 @@ m = accumulator();
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import incrme from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-me@deno/mod.js';
+import incrme from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-me@v0.1.1-deno/mod.js';
 
 var accumulator;
 var v1;
